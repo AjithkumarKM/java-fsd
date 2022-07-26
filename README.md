@@ -1,0 +1,2 @@
+# java-fsd
+Practise projects
