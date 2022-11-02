@@ -1,0 +1,19 @@
+.ima{
+
+    height: 35px;
+    width: 35px;
+    
+    }
+
+.navbar{
+    background-color: aqua;
+}
+li:hover{
+    color: white;
+    background-color: black;
+}
+a{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

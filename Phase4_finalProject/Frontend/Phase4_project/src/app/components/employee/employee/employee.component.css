@@ -1,0 +1,29 @@
+.full{
+    text-align: center;
+    background-color: darkgray;
+    height: 80vh;
+}
+.headr{
+    color:white;
+    height:10%;
+}
+.groupt{
+    height: 60%;
+    width:60%;
+    margin:0 auto;
+    margin-top: 50px;
+    border: 2px dotted black;
+}
+
+.pwd{
+    margin: 30px;
+    text-align: center;
+}
+
+.emp{
+    margin-top:15px;
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+    font-weight: bold;
+}

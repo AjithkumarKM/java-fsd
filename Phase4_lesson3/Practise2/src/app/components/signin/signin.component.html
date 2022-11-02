@@ -1,0 +1,23 @@
+<div class="form-container">
+    <div class="form">
+    <form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
+        <div class="form-group my-3">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control" ngModel>
+        </div>
+        <div class="form-group my-3">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control" ngModel>
+        </div>
+        <div class="form-group my-3">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" class="form-control" ngModel>
+        </div>
+        <div class="form-group my-3">
+            <label for="password">Password</label>
+            <input type="text" name="password" class="form-control" ngModel>
+        </div>
+        <button class="my-3 btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+</div>

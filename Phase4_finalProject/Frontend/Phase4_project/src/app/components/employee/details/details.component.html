@@ -1,0 +1,115 @@
+<div class="container-fluid my-4">
+    <div class="row">
+        <div class="col-4">
+            <h3>Employee Details</h3>
+        </div>
+        <div class="col-4"><button class="btn btn-primary" type="submit" data-bs-toggle="modal"
+                data-bs-target="#addEmployee">Add Employee</button></div>
+        <div class="col-4">
+            <button class="btn btn-primary" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>
+<!--<table class="table table-dark" *ngIf="tData">-->
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Designation</th>
+            <th colspan="3">Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employeeList">
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.designation }}</td>
+            <td>{{ employee.salary }}</td>
+            <td><button class="btn btn-danger" (click)="deleteEmployee(employee)">Delete</button></td>
+            <td><button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editEmployee" (click)="editEmployee(employee.id)">Edit</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="modal fade" id="addEmployee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="employee" (submit)="addEmployee()">
+                    <div class="form-group my-2">
+                        <label for="name">Enter Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name"
+                            formControlName="name">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="email">Enter Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                            formControlName="email">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="designation">Enter designation</label>
+                        <input type="text" class="form-control" id="designation" placeholder="Enter designation"
+                            formControlName="designation">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="salary">Enter Salary</label>
+                        <input type="text" class="form-control" id="salary" placeholder="Enter salary"
+                            formControlName="salary">
+                    </div>
+                    <div class="modal-footer my-2">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Add Employee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="editEmployee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="employee" >
+                    <div class="form-group my-2">
+                        <label for="name">Enter Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name"
+                            formControlName="name">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="email">Enter Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email"
+                            formControlName="email">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="designation">Enter designation</label>
+                        <input type="text" class="form-control" id="designation" placeholder="Enter designation"
+                            formControlName="designation">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="salary">Enter Salary</label>
+                        <input type="text" class="form-control" id="salary" placeholder="Enter salary"
+                            formControlName="salary">
+                    </div>
+                    <div class="modal-footer my-2">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" (click)="updateEmployee()">Update Employee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

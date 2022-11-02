@@ -1,0 +1,21 @@
+.bg-img{
+    background-image: url('https://www.folgateltd.com/wp-content/uploads/2018/10/AdobeStock_173959412.jpeg');
+    height: 500px;
+    width: 100%;
+    background-size: 100%
+}
+
+.content{
+    background-color: rgb(185, 185, 185,0.5);
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    width:600px;
+    padding-top:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container{
+    margin-top: 50px;
+}

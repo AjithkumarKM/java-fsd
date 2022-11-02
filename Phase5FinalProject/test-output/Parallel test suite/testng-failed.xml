@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Parallel test suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Automate Flipkart(failed)">
+    <classes>
+      <class name="project.AutomateFlipkart">
+        <methods>
+          <include name="scrollFrequency"/>
+          <include name="scrollToEnd"/>
+          <include name="loadImage"/>
+          <include name="scrollFeature"/>
+          <include name="beforeTest"/>
+          <include name="loadPage"/>
+          <include name="downloadImg"/>
+          <include name="afterTest"/>
+          <include name="screenRes"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- project.AutomateFlipkart -->
+      <class name="project.AutomateFlipkart2">
+        <methods>
+          <include name="scrollFrequency"/>
+          <include name="scrollToEnd"/>
+          <include name="afterTest"/>
+          <include name="loadImage"/>
+          <include name="screenRes"/>
+          <include name="scrollFeature"/>
+          <include name="beforeTest"/>
+          <include name="loadPage"/>
+          <include name="downloadImg"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- project.AutomateFlipkart2 -->
+    </classes>
+  </test> <!-- Automate Flipkart(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

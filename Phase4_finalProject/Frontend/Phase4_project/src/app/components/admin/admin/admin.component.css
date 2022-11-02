@@ -1,0 +1,13 @@
+.body-l{
+    width: 50%;
+    background-color: turquoise;
+    height: 50%;
+}
+
+.form-l{
+    text-align: center;
+    width:75%;
+    height: 50vh;
+    padding-top: 20px;
+    margin: auto;
+}

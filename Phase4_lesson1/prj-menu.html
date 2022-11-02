@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .nav{
+            height:10vh;
+        }
+        .nav-item{
+            margin-left:2%;
+            margin-right:2%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 1px;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+
+        .nav-link{
+            color:white;
+        }
+
+        .nav-link.menu{
+            background-color: cyan;
+            color:black;
+        }
+
+        .nav-item:hover{
+            background-color: darkgray;
+        }
+        .nav-link:hover {color: blue;}
+
+        section{
+            padding: 10px;
+        }
+        .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+        }
+        footer{
+            height: 20px;
+        }
+        .menutag{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bg-dark container-fluid clearfix">
+            <div class="nav justify-content-start align-items-center text-center ms-5 ">
+                <a href="./prj.html" class="nav-item nav-link home ">Home</a>
+                <a href="./prj-menu.html" class="nav-item nav-link menu">Menu</a>
+                <a href="./prj-about.html" class="nav-item nav-link">About</a>
+                <a href="./prj-contact.html" class="nav-item nav-link ">Contact</a>
+            </div>
+        </div>  
+    </header>
+    <section class="w-100 bg-primary bg-img " style="background-image: url('3014596.webp');">
+        <div class="container w-80 " >
+            <h1 class="text-center mb-4 mt-2 menutag">Menu</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./biriyani.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <div class="row">
+                            <div class="col-8 ">Biriyani</div>
+                            <div class="col-4">Rs. 200</div>
+                        </div>
+                      </h5>
+                      <p class="card-text">All I wanna do is eat biryani all day.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="./parota.jfif" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <div class="row">
+                              <div class="col-8 ">Parota</div>
+                              <div class="col-4">Rs. 40</div>
+                          </div>
+                        </h5>
+                        <p class="card-text">Kothu parota, Chilli parota, etc are available.</p>
+                      </div>
+                    </div>
+                  </div><div class="col">
+                  <div class="card h-100">
+                    <img src="./fried-rice.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <div class="row">
+                            <div class="col-8 ">Fried Rice</div>
+                            <div class="col-4">Rs. 150</div>
+                        </div>
+                      </h5>
+                      <p class="card-text">Fried rice makes your boiled rice taste better! #friedoverboiled.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./fruit salad.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <div class="row">
+                            <div class="col-8 ">Fruit Salad</div>
+                            <div class="col-4">Rs. 250</div>
+                        </div>
+                      </h5>
+                      <p class="card-text">Come taste the sweet produce of Mother Nature.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="./juice.jfif" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="row">
+                                <div class="col-8 ">Fresh Fruit Juices</div>
+                                <div class="col-4">Rs. 60</div>
+                            </div>
+                        </h5>
+                        <p class="card-text">Sometimes the water is not enough to beat the sun.</p>
+                      </div>
+                    </div>
+                </div><div class="col">
+                    <div class="card h-100">
+                      <img src="./fried chicken.jfif" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="row">
+                                <div class="col-8 ">Fried Chicken</div>
+                                <div class="col-4">Rs. 300</div>
+                            </div>
+                        </h5>
+                        <p class="card-text">Crispy on the outside, tender and juicy on the inside.</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-12 text-center align-middle">&#169 Powered By Thjia Technologies 2022 Inc.</div>
+        </div>
+    </footer>
+</body>
+</html>

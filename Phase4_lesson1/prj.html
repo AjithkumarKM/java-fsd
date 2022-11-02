@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <style>
+        .nav{
+            height:10vh;
+        }
+        .nav-item{
+            margin-left:2%;
+            margin-right:2%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 1px;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+
+        .nav-item:hover{
+            background-color: darkgray;
+        }
+        
+        .bg-img{
+            height:80vh;
+        }
+
+        .nav-link{
+            color:white;
+        }
+        .nav-link.home{
+            background-color:cyan;
+            color:black;
+        }
+        .nav-link.home:hover{
+            background-color:darkgray;
+            color:white;
+        }
+        .company{
+            line-height: 70vh;
+            font-family: 'Bungee Inline', cursive;
+            color:white;
+            text-shadow: 3px 3px 4px red;
+        }
+        @media (max-width:530px){
+            .company{
+                font-size: 30px;
+            }
+        }
+        @media (min-width:530px){
+            .company{
+                font-size: 50px;
+            }
+        }
+        footer{
+            height: 10vh;
+        }
+        footer div{
+            height: 100%;
+        }
+        footer div div{
+            line-height: 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bg-dark container-fluid clearfix">
+            <div class="nav justify-content-start align-items-center text-center ms-5 ">
+                <a href="#" class="nav-item nav-link home">Home</a>
+                <a href="./prj-menu.html" class="nav-item nav-link">Menu</a>
+                <a href="./prj-about.html" class="nav-item nav-link ">About</a>
+                <a href="./prj-contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>  
+    </header>
+    <section class="w-100 bg-img">
+        <div class=" bg-image h-100" style="background-image: url('3014596.webp');">
+            <div class=" text-center company">Ming's Diner restaraunt</div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-12 text-center align-middle">&#169 Powered By Thjia Technologies 2022 Inc.</div>
+        </div>
+    </footer>
+</body>
+</html>

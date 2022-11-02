@@ -1,0 +1,10 @@
+label{
+    color: aliceblue;
+}
+.form-container{
+    width: 100%;
+}
+.form{
+    width: 50%;
+    align-items: center;
+}

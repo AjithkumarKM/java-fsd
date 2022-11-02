@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        //"strictNullChecks": false
+    },
+    "files": ["ts_datatypes.ts"],
+    "include": [
+        "*.ts"
+    ]
+}

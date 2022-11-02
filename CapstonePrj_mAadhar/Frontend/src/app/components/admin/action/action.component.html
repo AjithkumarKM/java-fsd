@@ -1,0 +1,94 @@
+<div class="outer">
+    <div class="inner">
+        <div class="my-4">
+            <h5>To Get Application List to Verify</h5>
+            <button type="submit" class="btn btn-primary" (click)="getAllApplicationList()">Click here</button>
+        </div>
+        <div class="my-4">
+            <h5>To Get All Issued Aadhar List</h5>
+            <button type="submit" class="btn btn-primary" routerLink="/getIssuedList">Click here</button>
+        </div>
+        <div class="my-4"> 
+            <h5>To Logout</h5>
+            <button type="submit" class="btn btn-primary" (click)="logout()">Click here</button>
+        </div>
+    </div>
+</div>
+<div>
+    <!--<table class="table table-dark" *ngIf="tData">
+        <div *ngIf="isAppliedListEmpty">
+            <h3>No Application found</h3>
+        </div> -->
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Application id</th>
+                <th>Customer id</th>
+                <th>Status</th>
+                <th colspan="3">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let application of appliedList">
+                <td>{{ application.appId }}</td>
+                <td>{{ application.custId }}</td>
+                <td>{{ application.status }}</td>
+                <td><button class="btn btn-primary" (click)="getCustomerDetails(application)">Get Details</button></td>
+                <td><button class="btn btn-success" (click)="acceptAppl(application)">Accept</button></td>
+                <td><button class="btn btn-danger" (click)="rejectAppl(application)">Reject</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<br>
+
+<div *ngIf="isCust">
+    <h3> Detials of Customers is : </h3>
+    <button class="primary" type="submit" (click)="hideDetails()">Close Details</button>
+    <table class="table table-dark">
+        <tbody>
+            <tr>
+                <td> Name: </td>
+                <td> {{customer.name}} </td>
+            </tr>
+            <tr>
+                <td> Email: </td>
+                <td> {{customer.email}} </td>
+            </tr>
+            <tr>
+                <td> Gender: </td>
+                <td> {{customer.gender}} </td>
+            </tr>
+            <tr>
+                <td> DOB: </td>
+                <td> {{customer.dob}} </td>
+            </tr>
+            <tr>
+                <td> Phone no: </td>
+                <td> {{customer.phoneNo}} </td>
+            </tr>
+            <tr>
+                <td> Address Line: </td>
+                <td> {{customer.addressLine}} </td>
+            </tr>
+            <tr>
+                <td> City: </td>
+                <td> {{customer.city}} </td>
+            </tr>
+            <tr>
+                <td> District: </td>
+                <td> {{customer.district}} </td>
+            </tr>
+            <tr>
+                <td> State: </td>
+                <td> {{customer.state}} </td>
+            </tr>
+            <tr>
+                <td> Pin code: </td>
+                <td> {{customer.pincode}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-10T13:45:24 IST" name="Testing Login" finished-at="2022-10-10T13:45:57 IST" duration-ms="33009">
+    <groups>
+    </groups>
+    <test started-at="2022-10-10T13:45:24 IST" name="Regression" finished-at="2022-10-10T13:45:57 IST" duration-ms="33009">
+      <class name="automated_test.Login">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:automated_test.Login@57af006c]" started-at="2022-10-10T13:45:24 IST" name="beforeTest" finished-at="2022-10-10T13:45:31 IST" duration-ms="6421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="login()[pri:0, instance:automated_test.Login@57af006c]" started-at="2022-10-10T13:45:31 IST" name="login" finished-at="2022-10-10T13:45:57 IST" duration-ms="25883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:automated_test.Login@57af006c]" started-at="2022-10-10T13:45:57 IST" name="afterTest" finished-at="2022-10-10T13:45:57 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- automated_test.Login -->
+    </test> <!-- Regression -->
+  </suite> <!-- Testing Login -->
+</testng-results>

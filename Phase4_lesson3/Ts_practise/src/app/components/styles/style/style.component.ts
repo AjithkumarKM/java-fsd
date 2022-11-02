@@ -1,0 +1,16 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-style',
+  templateUrl: './style.component.html',
+  styleUrls: ['./style.component.scss']
+})
+export class StyleComponent implements OnInit {
+
+  addHighlight = true;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

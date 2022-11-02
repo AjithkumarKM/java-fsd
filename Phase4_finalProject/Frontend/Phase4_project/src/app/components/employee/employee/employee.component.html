@@ -1,0 +1,86 @@
+<div class="continer-fluid my-4 full">
+  <div class="headr bg-dark">
+    <div class="row">
+      <div class="col-8">
+        <h3>Welcome Admin</h3>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter New Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="loginForm" (submit)="changePassword()">
+            <div class="form-group my-4">
+              <label for="exampleInputPassword1" class="my-2">Enter New Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                formControlName="password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Change Password</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="groupt">
+    <div class="pwd">
+      <h3>want to change password?</h3>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#changePassword">Click here</button>
+    </div>
+
+    <div class="pwd">
+      <h3>want to View employee details?</h3>
+      <button class="btn btn-primary" (click)="viewDetails()">Get All employees</button>
+    </div>
+
+    <div class="pwd">
+      <h3>Search by employee ID?</h3>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#getById">Search by id</button>
+    </div>
+  </div>
+
+  <!--Get bi id modal-->
+  <div class="modal fade" id="getById" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter New Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="searchForm" (submit)="getById()">
+            <div class="form-group my-4">
+              <label for="sid" class="my-2">Enter Id</label>
+              <input type="number" class="form-control" id="sid" placeholder="id" formControlName="sid">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Get Employee</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isEmpfound" class="emp">
+    Detials of Employee is below:
+      <div class="row content">
+        <div class="col-8">
+          {{tempEmp | json}}
+        </div>
+      </div>
+  </div>
+</div>
